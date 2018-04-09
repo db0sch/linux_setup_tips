@@ -22,3 +22,10 @@ todo(dbosch) => Add tutorial links
 - `/` root partition should be ext4
 
 You can also have a separate `/home` partition to isolate data from the core OS. But it's a more advanced concept. Not useful/needed for students on day 1.
+
+
+## Nvidia
+> Highlight the Ubuntu entry in the GRUB boot menu and press the E key. Add nouveau.modeset=0 to the end of the linux line - press F10 to boot.
+
+- `nouveau.modeset=0` prevent using the intel graphic card to use only the nvidia. Useful if laptop have both. Then you only use the nvidia one.
+- Might need to install last drivers: `sudo apt-get install nvidia-current`
